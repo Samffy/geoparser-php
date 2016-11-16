@@ -1,0 +1,70 @@
+GeoParser:
+    gpx:
+        type: GeoParser\Model\GeoContainer
+        methods:
+            setMetadata:
+                type: GeoParser\Model\Metadata
+                path: metadata
+                methods:
+                    setCreatedAt:
+                        path: time
+                        type: value
+                        transform: \Datetime
+                    addLink:
+                        type: GeoParser\Model\Link
+                        path: link
+                        methods:
+                            setTitle:
+                                path: text
+                                type: value
+                            setUrl:
+                                type: attribute
+                                name: href
+                    addArea:
+                        type: GeoParser\Model\Area
+                        path: bounds
+                        methods:
+                            setMaximumLatitude:
+                                type: attribute
+                                name: maxlat
+                                transform: float
+                            setMinimumLatitude:
+                                type: attribute
+                                name: minlat
+                                transform: float
+                            setMaximumLongitude:
+                                type: attribute
+                                name: maxlon
+                                transform: float
+                            setMinimumLongitude:
+                                type: attribute
+                                name: minlon
+                                transform: float
+            addTrack:
+                type: Collection<GeoParser\Model\Track>
+                path: trk
+                methods:
+                    setName:
+                        path: name
+                        type: value
+                    addTrackSegment:
+                        type: Collection<GeoParser\Model\TrackSegment>
+                        path: trkseg
+                        methods:
+                            addWaypoint:
+                                path: trkpt
+                                type: Collection<GeoParser\Model\Waypoint>
+                                methods:
+                                    setElevation:
+                                        path: ele
+                                        type: value
+                                        transform: float
+                                    setLatitude:
+                                        type: attribute
+                                        name: lat
+                                        transform: float
+                                    setLongitude:
+                                        type: attribute
+                                        name: lon
+                                        transform: float
+

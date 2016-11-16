@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>PHP</ID>
+  <OriginalElement>\GeoParser\Model\Area</OriginalElement>
+  <nodes>
+    <node x="-331.5555555555555" y="838.8888888888888">\GeoParser\Model\Copyright</node>
+    <node x="-339.8888888888888" y="54.222222222222285">\GeoParser\Model\GeoContainer</node>
+    <node x="95.33333333333326" y="483.1111111111112">\GeoParser\Model\Link</node>
+    <node x="-389.0" y="640.0">\GeoParser\Model\Area</node>
+    <node x="580.3333333333333" y="54.22222222222226">\GeoParser\Model\TrackSegment</node>
+    <node x="81.11111111111109" y="844.2222222222222">\GeoParser\Model\Person</node>
+    <node x="16.66666666666663" y="-28.88888888888893">\GeoParser\Model\Track</node>
+    <node x="-408.9999999999999" y="263.3333333333333">\GeoParser\Model\Metadata</node>
+    <node x="397.7777777777778" y="249.99999999999994">\GeoParser\Model\Waypoint</node>
+    <node x="569.4444444444443" y="869.7777777777777">\GeoParser\Model\Station</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="\GeoParser\Model\Waypoint" target="\GeoParser\Model\Link">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="\GeoParser\Model\Metadata" target="\GeoParser\Model\Link">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="\GeoParser\Model\GeoContainer" target="\GeoParser\Model\Metadata">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="\GeoParser\Model\Person" target="\GeoParser\Model\Link">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="\GeoParser\Model\Track" target="\GeoParser\Model\TrackSegment">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="\GeoParser\Model\TrackSegment" target="\GeoParser\Model\Waypoint">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="\GeoParser\Model\GeoContainer" target="\GeoParser\Model\Track">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="\GeoParser\Model\Waypoint" target="\GeoParser\Model\Station">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="\GeoParser\Model\Metadata" target="\GeoParser\Model\Area">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="\GeoParser\Model\Track" target="\GeoParser\Model\Link">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.8" x="306.08333333333326" y="507.69444444444446" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+  </Categories>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
